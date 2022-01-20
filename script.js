@@ -32,97 +32,148 @@
 // numero2 = 134;
 // console.log("secondo var", numero2)
 
-pippo  = "Ciao a tutti!";
-console.log("log pippo", pippo);
+// pippo  = "Ciao a tutti!";
+// console.log("log pippo", pippo);
 
-var pippo = "ciao ad alcuni";
-console.log("secondo log pippo", pippo);
+// var pippo = "ciao ad alcuni";
+// console.log("secondo log pippo", pippo);
 
-//let pippo, pluto, paperino;
+// //let pippo, pluto, paperino;
 
-let operazione = 5 + 6;
-console.log(operazione);
+// let operazione = 5 + 6;
+// console.log(operazione);
 
-if (5 > 8)
-{
-    console.log("sono passato dall'if");
-}
+// if (5 > 8)
+// {
+//     console.log("sono passato dall'if");
+// }
 
-if ((operazione > 10) || (operazione !== 11)) 
-{
-    console.log("sono passato");
-} 
-else 
-{
-    console.log("non sono passato");
-}
+// if ((operazione > 10) || (operazione !== 11)) 
+// {
+//     console.log("sono passato");
+// } 
+// else 
+// {
+//     console.log("non sono passato");
+// }
 
-let numero3 = 0;
+// let numero3 = 0;
 
-if (numero3 > 0) 
-{
-    console.log('il numero è positivo');
-}
-else if (numero3 === 0)
-{
-    console.log('è 0');
-}
-else
-{
-    console.log('il numero è negativo');
-}
+// if (numero3 > 0) 
+// {
+//     console.log('il numero è positivo');
+// }
+// else if (numero3 === 0)
+// {
+//     console.log('è 0');
+// }
+// else
+// {
+//     console.log('il numero è negativo');
+// }
 
-let i = 0;
-console.log("while");
-while (i < 10) {
-    console.log(i);
-    i = i + 1;
-}
+// let i = 0;
+// console.log("while");
+// while (i < 10) {
+//     console.log(i);
+//     i = i + 1;
+// }
 
-let j = 0;
-console.log("do");
-do {
-    console.log(j);
-    j = j + 1;
-} while (j < 10);
+// let j = 0;
+// console.log("do");
+// do {
+//     console.log(j);
+//     j = j + 1;
+// } while (j < 10);
 
-console.log("for");
-for (let k = 0; k < 10; k++) 
-{
-    console.log(k);
-}
+// console.log("for");
+// for (let k = 0; k < 10; k++) 
+// {
+//     console.log(k);
+// }
 
 
 
-let stringa = "#";
+// let stringa = "#";
 
-for (let index = 0; index < 7; index++) {
-    console.log(stringa);
-    //stringa = stringa + "#";
-    stringa += "#";
-}
+// for (let index = 0; index < 7; index++) {
+//     console.log(stringa);
+//     //stringa = stringa + "#";
+//     stringa += "#";
+// }
 
-let conto = 0;
-let stringa2 = "#";
+// let conto = 0;
+// let stringa2 = "#";
 
-while (conto < 7) 
-{
-    console.log(stringa2);
-    stringa2 += "#";
-    conto++;
-}
+// while (conto < 7) 
+// {
+//     console.log(stringa2);
+//     stringa2 += "#";
+//     conto++;
+// }
 
-let conto2 = 0;
-let stringa3 = "";
+// let conto2 = 0;
+// let stringa3 = "";
 
-do {
-    stringa3 += "#";
-    console.log(stringa3);
-    conto2++;
-} while (conto2 <7);
+// do {
+//     stringa3 += "#";
+//     console.log(stringa3);
+//     conto2++;
+// } while (conto2 <7);
 
-for (let a = 0; a < 8; a++) {
-    for (let b = 0; b < 8; b++) {
-        console.log(`linea ${a}, carattere ${b}`)
+let stringa4 = "";
+
+for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+        switch ((i+j) % 2) {
+            case 0:
+                stringa4 += " ";
+                break;
+        
+            default:
+                stringa4 += "#";
+                break;
+        }
     }
+    stringa4 += "\n";
 }
+
+console.log(stringa4);
+
+
+let stringa5 = "";
+
+for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+        if ((i+j) % 2 === 0) {
+            stringa5 += " ";
+        } else {
+            stringa5 += "#";
+        }
+    }
+    stringa5 += "\n";
+}
+
+console.log(stringa5);
+
+let stringa6 = "";
+
+for (let i = 0; i < 8; i++) {
+    for (let j = 0; j < 8; j++) {
+
+        let result = ((i +j) % 2 === 0) ? 1 : 2;
+        
+        switch (result) {
+            case 1:
+                stringa6 += " ";
+                break;
+        
+            case 2:
+                stringa6 += "#";
+                break;
+        }
+    }
+    stringa6 += "\n";
+}
+
+console.log(stringa6);
