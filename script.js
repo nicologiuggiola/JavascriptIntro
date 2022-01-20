@@ -178,14 +178,14 @@ for (let i = 0; i < w_H; i++) {
 
 console.log(stringa6);
 
-let stringa7 = "";
+let grid = "";
 
 for (let i = 0; i < w_H; i++) {
     for (let j = 0; j < w_H; j++) {
         let result = ((i +j) % 2 === 0) ? ' ': '#';
-        stringa7 += result;
+        grid += result;
     }
-    stringa7 += "\n";
+    grid += "\n";
 }
 
-console.log(stringa5);
+console.log(grid);
