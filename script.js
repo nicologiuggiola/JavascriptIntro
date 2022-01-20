@@ -120,11 +120,11 @@
 //     console.log(stringa3);
 //     conto2++;
 // } while (conto2 <7);
-
+let w_H = 8;
 let stringa4 = "";
 
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
+for (let i = 0; i < w_H; i++) {
+    for (let j = 0; j < w_H; j++) {
         switch ((i+j) % 2) {
             case 0:
                 stringa4 += " ";
@@ -143,8 +143,8 @@ console.log(stringa4);
 
 let stringa5 = "";
 
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
+for (let i = 0; i < w_H; i++) {
+    for (let j = 0; j < w_H; j++) {
         if ((i+j) % 2 === 0) {
             stringa5 += " ";
         } else {
@@ -158,8 +158,8 @@ console.log(stringa5);
 
 let stringa6 = "";
 
-for (let i = 0; i < 8; i++) {
-    for (let j = 0; j < 8; j++) {
+for (let i = 0; i < w_H; i++) {
+    for (let j = 0; j < w_H; j++) {
 
         let result = ((i +j) % 2 === 0) ? 1 : 2;
         
@@ -177,3 +177,15 @@ for (let i = 0; i < 8; i++) {
 }
 
 console.log(stringa6);
+
+let stringa7 = "";
+
+for (let i = 0; i < w_H; i++) {
+    for (let j = 0; j < w_H; j++) {
+        let result = ((i +j) % 2 === 0) ? ' ': '#';
+        stringa7 += result;
+    }
+    stringa7 += "\n";
+}
+
+console.log(stringa5);
